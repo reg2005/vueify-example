@@ -4,19 +4,19 @@
   "description": "Vueify transform for Browserify example",
   "main": "index.js",
   "scripts": {
-    "dev": "watchify -t vueify -e src/main.js -o build/build.js"
+    "dev": "watchify -v -t vueify -e src/main.js -o build/build.js"
   },
   "author": "Evan You",
   "license": "MIT",
   "devDependencies": {
     "watchify": "^1.0.6",
     "insert-css": "^0.2.0",
-    "vueify": "^1.1.0",
+    "vueify": "^1.1.2",
     "coffee-script": "^1.8.0",
     "jade": "^1.7.0",
     "stylus": "^0.49.1"
   },
   "dependencies": {
-    "vue": "git://github.com/yyx990803/vue#next"
+    "vue": "^0.11.5"
   }
 }
