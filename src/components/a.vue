@@ -1,6 +1,6 @@
 <style>
 .red {
-  color: #f00;
+  color: #f66;
 }
 </style>
 
