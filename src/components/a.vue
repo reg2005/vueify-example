@@ -8,12 +8,12 @@
   <h2 class="red">{{msg}}</h2>
 </template>
 
-<script>
-module.exports = {
-  data: function () {
-    return {
-      msg: 'Hello from Component A!'
-    }
-  }
+<script lang="es">
+// awesome ES2015 syntax!
+
+export default {
+  data: () => ({
+    msg: 'Hello from Component AAA!'
+  })
 }
 </script>

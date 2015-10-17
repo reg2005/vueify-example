@@ -8,3 +8,7 @@
 npm install
 npm run dev
 ```
+
+## Note
+
+This example uses a bunch a pre-processors just for demonstration purposes.

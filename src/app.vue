@@ -7,6 +7,7 @@ comp-b
 </template>
 
 <script lang="coffee">
+# coffeescript!
 module.exports =
   data: ->
     msg: 'hello'
