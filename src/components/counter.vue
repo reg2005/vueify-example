@@ -15,7 +15,7 @@ div {
 </template>
 
 <script lang="es">
-module.exports = {
+export default {
   data () {
     return { count: 0 }
   },
