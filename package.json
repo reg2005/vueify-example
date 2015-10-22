@@ -4,21 +4,23 @@
   "description": "Vueify transform for Browserify example",
   "main": "index.js",
   "scripts": {
-    "dev": "watchify -v -t vueify -e src/main.js -o build/build.js"
+    "dev": "watchify -vd -p browserify-hmr -t vueify -e src/main.js -o build/build.js & http-server -c 1 -a localhost",
+    "build": "NODE_ENV=production ./node_modules/watchify/node_modules/.bin/browserify -t vueify -e src/main.js | uglifyjs -c warnings=false -m > build/build.js"
   },
   "author": "Evan You",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-runtime": "^5.8.25",
-    "coffee-script": "^1.10.0",
-    "insert-css": "^0.2.0",
+    "browserify-hmr": "^0.3.1",
+    "http-server": "^0.8.5",
     "jade": "^1.11.0",
     "stylus": "^0.52.4",
-    "vueify": "^2.0.0",
+    "uglify-js": "^2.5.0",
+    "vueify": "^3.0.0",
     "watchify": "^3.4.0"
   },
   "dependencies": {
-    "vue": "^1.0.0"
+    "vue": "^1.0.0-rc.1"
   }
 }

@@ -1,17 +1,28 @@
 <style lang="stylus" src="./app.styl"></style>
 
 <template lang="jade">
-h1 {{msg}}
-comp-a
-comp-b
+div#app
+  h1 {{msg}}
+  comp-a
+  comp-b
+  counter
 </template>
 
-<script lang="coffee">
-# coffeescript!
-module.exports =
-  data: ->
-    msg: 'hello'
-  components:
-    compA: require './components/a.vue'
-    compB: require './components/b.vue'
+<script lang="es">
+import CompA from './components/a.vue'
+import CompB from './components/b.vue'
+import Counter from './components/counter.vue'
+
+export default {
+  data() {
+    return {
+      msg: 'Hello Vueify'
+    }
+  },
+  components: {
+    CompA,
+    CompB,
+    Counter
+  }
+}
 </script>
