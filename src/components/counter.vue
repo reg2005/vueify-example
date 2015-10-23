@@ -14,7 +14,7 @@ div {
   </div>
 </template>
 
-<script lang="es">
+<script>
 export default {
   data () {
     return { count: 0 }

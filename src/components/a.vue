@@ -8,12 +8,12 @@ h2 {
   <h2>{{msg}}</h2>
 </template>
 
-<script lang="es">
-// awesome ES2015 syntax!
-
+<script>
 export default {
-  data: () => ({
-    msg: 'Hello from Component AAA!'
-  })
+  data () {
+    return {
+      msg: 'Hello from Component AAA!'
+    }
+  }
 }
 </script>

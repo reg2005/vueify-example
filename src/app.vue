@@ -8,7 +8,7 @@ div#app
   counter
 </template>
 
-<script lang="es">
+<script>
 import CompA from './components/a.vue'
 import CompB from './components/b.vue'
 import Counter from './components/counter.vue'
