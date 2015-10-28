@@ -17,7 +17,7 @@
     "stylus": "^0.52.4",
     "uglify-js": "^2.5.0",
     "vue-hot-reload-api": "^1.2.1",
-    "vueify": "^4.0.0",
+    "vueify": "^5.0.0",
     "vueify-insert-css": "^1.0.0",
     "watchify": "^3.4.0"
   },
