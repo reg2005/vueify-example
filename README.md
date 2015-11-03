@@ -33,7 +33,7 @@ The default Babel options used for Vue.js components are:
 }
 ```
 
-If you wish to mofidy this, you can add a `vue.config.js` and configure the option for `babel`:
+If you wish to modify this, you can add a `vue.config.js` and configure the option for `babel`:
 
 ``` js
 // vue.config.js
