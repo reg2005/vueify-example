@@ -24,12 +24,8 @@ The default Babel options used for Vue.js components are:
 
 ``` js
 {
-  // use babel-runtime library for common helpers
-  optional: ['runtime'],
-  // use loose mode for faster builds
-  loose: 'all',
-  // disable non-standard stuff (e.g. JSX)
-  nonStandard: false
+  presets: ['es2015'],
+  plugins: ['transform-runtime']
 }
 ```
 
@@ -37,13 +33,13 @@ If you wish to modify this, you can add a `vue.config.js` and configure the opti
 
 ``` js
 // vue.config.js
-module.exports = function (vueify) {
-  vueify.option('babel', {
-    stage: 0, // use all the fancy stage 0 features!
-    optional: ['runtime'],
-    loose: 'all',
-    nonStandard: false
-  })
+module.exports = {
+  babel: {
+    // enable stage-0 features, make sure to install
+    // babel-presets-stage-0
+    presets: ['es2015', 'stage-0'],
+    plugins: ['transform-runtime']
+  }
 }
 ```
 
