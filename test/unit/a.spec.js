@@ -1,16 +1,16 @@
-var Vue = require('vue')
-var ComponentA = require('../../src/components/a.vue')
+import Vue from 'vue'
+import ComponentA from '../../src/components/a.vue'
 
-describe('a.vue', function () {
+describe('a.vue', () => {
 
   // asserting JavaScript options
-  it('should have correct message', function () {
+  it('should have correct message', () => {
     expect(ComponentA.data().msg).toBe('Hello from Component A!')
   })
 
   // asserting rendered result by actually rendering the component
-  it('should render correct message', function () {
-    var vm = new Vue({
+  it('should render correct message', () => {
+    const vm = new Vue({
       template: '<div><test></test></div>',
       components: {
         'test': ComponentA

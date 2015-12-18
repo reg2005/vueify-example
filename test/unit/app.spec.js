@@ -1,9 +1,9 @@
-var Vue = require('vue')
-var App = require('../../src/app.vue')
+import Vue from 'vue'
+import App from '../../src/app.vue'
 
-describe('app.vue', function () {
-  it('should render correct contents', function () {
-    var vm = new Vue({
+describe('app.vue', () => {
+  it('should render correct contents', () => {
+    const vm = new Vue({
       template: '<div><app></app></div>',
       components: { app: App }
     }).$mount()

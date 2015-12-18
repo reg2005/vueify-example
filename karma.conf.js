@@ -10,7 +10,7 @@ module.exports = function (config) {
     },
     browserify: {
       debug: true,
-      transform: ['vueify']
+      transform: ['vueify', 'babelify']
     },
     // if you want to continuously re-run tests on file-save,
     // replace the following line with `autoWatch: true`
