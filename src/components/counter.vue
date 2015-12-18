@@ -8,7 +8,7 @@ div {
 </style>
 
 <template>
-  <div>
+  <div class="counter">
     <p>I am a Counter Component. Edit me in dev mode.</p>
     <p class="count">Current count: {{count}}</p>
   </div>

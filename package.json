@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "watchify -vd -p browserify-hmr -t vueify -e src/main.js -o dist/build.js & http-server -c 1 -a localhost",
-    "build": "cross-env NODE_ENV=production ./node_modules/.bin/browserify -t vueify -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js"
+    "build": "cross-env NODE_ENV=production ./node_modules/.bin/browserify -t vueify -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
+    "test": "karma start karma.conf.js"
   },
   "author": "Evan You",
   "license": "MIT",
@@ -19,6 +20,13 @@
     "cross-env": "^1.0.5",
     "http-server": "^0.8.5",
     "jade": "^1.11.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-browserify": "^4.4.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-spec-reporter": "0.0.23",
+    "phantomjs": "^1.9.19",
     "stylus": "^0.52.4",
     "uglify-js": "^2.5.0",
     "vue-hot-reload-api": "^1.2.2",

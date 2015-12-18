@@ -5,14 +5,16 @@ h2 {
 </style>
 
 <template>
-  <h2>{{msg}}</h2>
+  <div class="component">
+    <h2>{{msg}}</h2>
+  </div>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      msg: 'Hello from Component AAA!'
+      msg: 'Hello from Component A!'
     }
   }
 }
