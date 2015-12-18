@@ -12,6 +12,9 @@ npm run dev
 
 # production build
 npm run build
+
+# run tests in PhantomJS
+npm test
 ```
 
 ## Note
