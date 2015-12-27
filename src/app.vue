@@ -14,7 +14,7 @@ import CompB from './components/b.vue'
 import Counter from './components/counter.vue'
 
 export default {
-  data() {
+  data () {
     return {
       msg: 'Hello Vueify'
     }

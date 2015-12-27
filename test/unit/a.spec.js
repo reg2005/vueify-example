@@ -18,4 +18,27 @@ describe('a.vue', () => {
     }).$mount()
     expect(vm.$el.querySelector('h2').textContent).toBe('Hello from Component A!')
   })
+
+  // example testing with a mock
+  it('should render with mocked message', function () {
+    // https://github.com/thlorenz/proxyquireify
+    const proxyquire = require('proxyquireify')(require)
+    // create an instance of the component module,
+    // injecting a mocked "../services/message" dependency
+    const ComponentAWithMock = proxyquire('../../src/components/a.vue', {
+      '../services/message': {
+        getMessage () {
+          return 'Hello from mock'
+        }
+      }
+    })
+    // now we can test it!
+    const vm = new Vue({
+      template: '<div><test></test></div>',
+      components: {
+        'test': ComponentAWithMock
+      }
+    }).$mount()
+    expect(vm.$el.querySelector('h2').textContent).toBe('Hello from mock')
+  })
 })

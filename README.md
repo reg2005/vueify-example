@@ -13,11 +13,14 @@ npm run dev
 # production build
 npm run build
 
+# lint JavaScript in both *.js and *.vue files
+npm run lint
+
 # run tests in PhantomJS
 npm test
 ```
 
-## Note
+## Notes
 
 #### ES2015 by Default
 
@@ -56,3 +59,9 @@ The following dependencies are installed in order to use pre-processors such as 
 
 - jade
 - stylus
+
+#### Unit Testing
+
+The unit tests are written against the [Jasmine testing framework](http://jasmine.github.io/edge/introduction.html) and run using [Karma](http://karma-runner.github.io/0.13/index.html) inside [PhantomJS](http://phantomjs.org/). You can edit `karma.conf.js` to run tests in different browsers or use a different testing framework (e.g. Mocha).
+
+The testing code is bundled with [karma-browserify](https://github.com/Nikku/karma-browserify) using the same transforms the app uses, which means you can use ES2015 and import `*.vue` files like in your app code.
