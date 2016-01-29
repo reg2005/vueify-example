@@ -1,4 +1,6 @@
-# Browserify + Vueify example
+# Browserify + Vueify example (deprecated)
+
+Deprecated in favor of [vue-cli](https://github.com/vuejs/vue-cli) and [browserify vue-cli template](https://github.com/vuejs-templates/browserify).
 
 > Example using [vueify](https://github.com/vuejs/vueify) with Browserify.
 
